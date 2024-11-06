@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+  <meta name="generator" content="Hugo 0.84.0" />
+  <title>Portofolio</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">HTML</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <!-- isi dengan gambar -->
+          <div class="text-center">
+            <img src="../logo-1.png" width="80px" class="rounded" alt="...">
+          </div>
+          <h1 class="fw-light mt-2">Algoritma Dan Pemograman</h1>
+          <p class="lead text-muted">
+            Amr Abdul Qudus Nim : 24010004 Mahasiswa Stikom Muhammadiyah Batam
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c" />
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                  Luas Segitiga
+                </text>
+              </svg>
+
+              <div class="card-body">
+                <p class="card-text">
+                  Program Luas Segitiga
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+
+                    </button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#segitigaModal">Hitung Luas</button>
+"
+                  </div>
+                </div>
+                            <div class="mt-4" id="hasil"></div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c" />
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                  Persegi Panjang 
+                </text>
+              </svg>
+
+
+              <div class="card-body">
+                <p class="card-text">
+                  Program Persegi Panjang
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                     
+                    </button>
+                    
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#persegiPanjangModal">Hitung Luas</button>
+                                    
+                                                  <div class="">
+
+                <!-- Modal untuk Menghitung Luas Persegi Panjang -->
+                <div class="modal fade" id="persegiPanjangModal" tabindex="-1" aria-labelledby="persegiPanjangModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form id="persegiPanjangForm">
+                          <div class="mb-3">
+                            <label for="panjang" class="form-label">Panjang</label>
+                            <input type="number" class="form-control" id="panjang" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="lebar" class="form-label">Lebar</label>
+                            <input type="number" class="form-control" id="lebar" required>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Hitung</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+                  </div>
+
+                </div>
+                                                                <div class="mt-4" id="hasilPersegiPanjang"></div>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c" />
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                  konversi suhu 
+                </text>
+              </svg>
+
+              <div class="card-body">
+                <p class="card-text">
+                  Program Konversi Suhu
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+
+                    <div class="">
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#konversiSuhuModal">Konversi Suhu</button>
+
+    <!-- Modal untuk Konversi Suhu -->
+    <div class="modal fade" id="konversiSuhuModal" tabindex="-1" aria-labelledby="konversiSuhuModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="konversiSuhuModalLabel">Input Suhu Celsius</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="konversiSuhuForm">
+                        <div class="mb-3">
+                            <label for="celcius" class="form-label">Suhu dalam Celsius</label>
+                            <input type="number" class="form-control" id="celcius" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Konversi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4" id="hasilKonversi"></div>
+</div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <div class="container mt-5">
+
+            <!-- Modal untuk Menghitung Luas Segitiga -->
+            <div class="modal fade" id="segitigaModal" tabindex="-1" aria-labelledby="segitigaModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="segitigaModalLabel">Input Segitiga</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form id="segitigaForm">
+                      <div class="mb-3">
+                        <label for="alas" class="form-label">Panjang Alas</label>
+                        <input type="number" class="form-control" id="alas" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="tinggi" class="form-label">Tinggi Segitiga</label>
+                        <input type="number" class="form-control" id="tinggi" required>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Hitung</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+  </main>
+
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Back to top</a>
+      </p>
+      <p class="mb-1">
+        Album example is &copy; Bootstrap, but please download and customize
+        it for yourself!
+      </p>
+      <p class="mb-0">
+        New to Bootstrap? <a href="/">Visit the homepage</a> or read our
+        <a href="../getting-started/introduction/">getting started guide</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script>
+    document.getElementById('segitigaForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const alas = parseFloat(document.getElementById('alas').value);
+      const tinggi = parseFloat(document.getElementById('tinggi').value);
+      const luas = 0.5 * alas * tinggi;
+
+      document.getElementById('hasil').innerHTML = `<h4>Luas Segitiga: ${luas.toFixed(2)}</h4>`;
+
+      // Menutup modal setelah perhitungan
+      var modal = bootstrap.Modal.getInstance(document.getElementById('segitigaModal'));
+      modal.hide();
+
+      // Mengosongkan input
+      document.getElementById('segitigaForm').reset();
+    });
+  </script>
+
+
+  <script>
+    document.getElementById('persegiPanjangForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const panjang = parseFloat(document.getElementById('panjang').value);
+      const lebar = parseFloat(document.getElementById('lebar').value);
+      const luas = panjang * lebar;
+
+      document.getElementById('hasilPersegiPanjang').innerHTML = `<h4>Luas Persegi Panjang: ${luas.toFixed(2)}</h4>`;
+
+      // Menutup modal setelah perhitungan
+      var modal = bootstrap.Modal.getInstance(document.getElementById('persegiPanjangModal'));
+      modal.hide();
+
+      // Mengosongkan input
+      document.getElementById('persegiPanjangForm').reset();
+    });
+  </script>
+  
+  <script>
+    document.getElementById('konversiSuhuForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const celcius = parseFloat(document.getElementById('celcius').value);
+        const fahrenheit = (9 / 5) * celcius + 32;
+
+        document.getElementById('hasilKonversi').innerHTML = `<h4>Suhu dalam Fahrenheit: ${fahrenheit.toFixed(2)} °F</h4>`;
+        
+        // Menutup modal setelah perhitungan
+        var modal = bootstrap.Modal.getInstance(document.getElementById('konversiSuhuModal'));
+        modal.hide();
+        
+        // Mengosongkan input
+        document.getElementById('konversiSuhuForm').reset();
+    });
+</script>
+
+
+</body>
+
+</html>
